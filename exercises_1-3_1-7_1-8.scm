@@ -22,7 +22,7 @@
 (define (sqrt-iter guess x)
   (if (good-enough? guess (improve guess x))
         guess
-              (sqrt-iter (improve guess x) x)))
+        (sqrt-iter (improve guess x) x)))
 
 (define (sqrt x)
   (sqrt-iter 1.0 x))
@@ -39,7 +39,7 @@
 (define (cbrt-iter guess x)
   (if (good-enough? guess (improve guess x))
         guess
-              (cbrt-iter (improve guess x) x)))
+        (cbrt-iter (improve guess x) x)))
 
 (define (cbrt x)
   (cbrt-iter 1.0 x))
