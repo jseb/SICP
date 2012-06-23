@@ -11,7 +11,7 @@
 (+ 4 5)
 
 ; Notice that in this case, the number of deferred + operations on the stack is
-; constantly one. therefore this in an iterative process which uses constant
+; constantly one. Therefore this is an iterative process which uses constant
 ; memory space.
 (define (+ a b)
   (if (= a 0)
